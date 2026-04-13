@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --background: 222 20% 8%;
+  --foreground: 210 20% 98%;
+  --card: 222 20% 10%;
+  --card-foreground: 210 20% 98%;
+  --primary: 33 100% 50%;
+  --primary-foreground: 222 20% 8%;
+  --secondary: 217 19% 15%;
+  --secondary-foreground: 210 20% 98%;
+  --muted: 217 19% 15%;
+  --muted-foreground: 215 20% 65%;
+  --accent: 33 100% 50%;
+  --accent-foreground: 222 20% 8%;
+  --border: 217 19% 20%;
+  --input: 217 19% 20%;
+  --ring: 33 100% 50%;
+  --radius: 0.75rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: "Inter", sans-serif;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  line-height: 1.6;
 }
 
-.App-header {
-  background-color: #282c34;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+}
+
+.min-h-screen {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.bg-background {
+  background-color: hsl(var(--background));
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-foreground {
+  color: hsl(var(--foreground));
 }
